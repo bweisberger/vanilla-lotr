@@ -251,7 +251,7 @@ function forgeTheFellowShip() {
 function theBalrog() {
   console.log("9: theBalrog");
    // change the `'Gandalf'` text to `'Gandalf the White'`
-   const rivendell = document.querySelector('#Rivendell');
+   // const rivendell = document.querySelector('#Rivendell');
    const hobbit = document.querySelector('.hobbit');
    friend = hobbit.nextElementSibling;
 
@@ -282,9 +282,14 @@ function theBalrog() {
 function hornOfGondor() {
   console.log("10: hornOfGondor");
   // pop up an alert that the horn of gondor has been blown
+  alert("The Horn of Gondor has been blown!")
   // Boromir's been killed by the Uruk-hai!
   // Remove `Boromir` from the Fellowship
-}
+  let theFellowship = document.querySelector('#Rivendell div')
+  console.log(theFellowship);
+  console.log(theFellowship.lastChild);
+    theFellowship.lastChild.remove();
+  }
 
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 10 complete - horn of gandor blew and Boromir is dead"
