@@ -181,7 +181,11 @@ rivendell.appendChild(buddyGroup);
 
 function leaveTheShire() {
   console.log("6: leaveTheShire");
-
+const hobbitses = document.querySelectorAll('.hobbit');
+const rivendell = document.querySelector('#Rivendell');
+for (let i = 0; i < hobbitses.length; i++) {
+  rivendell.appendChild(hobbitses[i]);
+}
   // assemble the `hobbits` and move them to `rivendell`
 }
 
