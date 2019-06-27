@@ -199,7 +199,11 @@ for (let i = 0; i < hobbitses.length; i++) {
 
 function beautifulStranger() {
   console.log("7: beautifulStranger");
-
+  const rivendell = document.querySelector('#Rivendell')
+  const buddyGroup = document.querySelector('aside')
+  const buddiesList = buddyGroup.firstChild;
+  const strider = buddiesList.lastChild.previousSibling
+  strider.innerText = 'Aragorn';
   // change the `'Strider'` text to `'Aragorn'`
 }
 
