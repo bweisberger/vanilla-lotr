@@ -108,11 +108,13 @@ function keepItSecretKeepItSafe() {
   console.log("3: keepItSecretKeepItSafe");
 
   // create a div with an id of `'the-ring'`
-
+const theRing = document.createElement('div');
+theRing.id = 'the-ring';
   // give the div a class of `'magic-imbued-jewelry'`
-
+theRing.className = 'magic-imbued-jewelry';
   // add the ring as a child of `Frodo`
-
+const firstHobbit = document.querySelector('.hobbit');
+firstHobbit.appendChild(theRing);
 }
 
 // COMMIT YOUR WORK
