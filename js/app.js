@@ -251,6 +251,23 @@ function forgeTheFellowShip() {
 function theBalrog() {
   console.log("9: theBalrog");
    // change the `'Gandalf'` text to `'Gandalf the White'`
+   const rivendell = document.querySelector('#Rivendell');
+   const hobbit = document.querySelector('.hobbit');
+   friend = hobbit.nextElementSibling;
+
+   // console.log(friend.innerText);
+   // console.log(friend.innerText == 'samwise "sam" gamgee')
+   while (friend.innerText != 'gandalf the grey') {
+     friend = friend.nextElementSibling;
+   }
+  console.log(friend.innerText);
+  friend.innerText = 'Gandalf the White';
+  // friend.style.color = 'black'
+  friend.style.background = 'white';
+  friend.style.border = 'thick solid grey';
+  // friend.style.borderWidth = 'thick';
+  // friend.style.borderColor = 'grey';
+  // friend.style.border = 'solid';
    // apply the following style to the element, make the // background 'white', add a grey border
 }
 
